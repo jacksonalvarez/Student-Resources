@@ -1,0 +1,20 @@
+// Lesson 1 Exit Ticket
+// Name: ______________________
+
+1. What is the output of the following code?
+
+int a = 5;
+int b = 4;
+System.out.println((a + b) / 2);
+System.out.println((a + b) / 2.0);
+
+2. Why does (a + b) / 2 give a different result than (a + b) / 2.0?
+
+3. Write a boolean expression that checks if a is greater than b.
+
+4. What is the value of x after this code runs?
+
+int x = 10;
+x = x + 5 * 2;
+
+5. List three Java primitive data types.

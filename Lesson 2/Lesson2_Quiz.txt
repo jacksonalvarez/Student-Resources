@@ -1,0 +1,21 @@
+// Lesson 2 Quick Quiz (Not Graded)
+// Name: ______________________
+
+1. What is the output of the following code?
+
+int x = 2;
+x = x * 3;
+System.out.println(x);
+
+2. What does the "+=" operator do?
+
+3. Write a line of code that declares an int variable called age and sets it to 16.
+
+4. What is the difference between int and double?
+
+5. Predict the output:
+
+int a = 10;
+int b = 4;
+System.out.println(a / b);
+System.out.println(a / (double)b);
