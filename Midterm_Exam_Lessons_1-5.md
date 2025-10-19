@@ -1,11 +1,9 @@
 # Java Programming Midterm Exam - Lessons 1-5
-
-**Name:** ________________________________ **Date:** ________________
+[Blank Answer Sheet](https://docs.google.com/document/d/1Scfj9WSSqaf1tnSI0LLCVYcurabTbixruFx3YIaN8HE/edit?usp=sharing)
 
 **Instructions:**
 
 - This exam covers material from Lessons 1-5
-- Show all work where applicable
 - Write code clearly and include proper syntax
 - Total Points: 100
 
