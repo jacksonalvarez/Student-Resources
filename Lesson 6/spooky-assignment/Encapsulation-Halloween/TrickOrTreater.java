@@ -7,14 +7,17 @@
  */
 public class TrickOrTreater {
     // Private fields - encapsulated data that cannot be directly accessed
-
+    private String name;
+    private int sugarLevel;
+    private int candyCount;
+    private String[] candyBag = new String[100];
     
     /**
      * Constructor to create a new TrickOrTreater
      * @param name The name of the trick-or-treater
      */
-    public TrickOrTreater(String name) {
-
+    public TrickOrTreater(String n) {
+        name = n;
     }
     
     /**
@@ -22,7 +25,7 @@ public class TrickOrTreater {
      * @return The trick-or-treater's name
      */
     public String getName() {
-        return ;
+        return name;
         }
     
     /**
@@ -31,16 +34,30 @@ public class TrickOrTreater {
      * @param candy The type of candy collected
      */
     public void collectCandy(String candy) {
-
+        for (int i = 0, i < 100, i++){
+            if (candyBag[i] != ""){
+        
+            }    
+            else{
+                candy++;
+                candyBag[i] = candy;
+                break;
+            }
+            }    
+        }
     }
     
     /**
      * Public method to eat candy - demonstrates controlled modification
      * Safely decreases candy count and increases sugar level
      */
-    public void eatCandy() {
-
-
+    public void eatCandy(String candy) {
+        for (int i = 0, i < 100, i++){
+            if (candyBag[i] == candy){
+                candyBag.splice(i, 1);// Removes 1 element starting at index 2
+                sugarLevel += 10;
+            }
+        }
     }
     
     /**
@@ -57,6 +74,21 @@ public class TrickOrTreater {
      * Only accessible within this class, not from external code
      */
     private void checkSugarCrash() {
+        if (sugarLevel > 60){
+            System.out.println(name + "is bouncing off the walls with energy!");
+        }
+        else if (sugarLevel > 40){
+            System.out.println(name + "is feeling quite hyper!");
+        }
+        else if (sugarLevel > 20){
+            System.out.println(name + "is feeling pretty good!");
+        }
+        else if (sugarLevel > 0){
+            System.out.println(name + "is feeling normal");
+        }
+         else{
+            System.out.println(name + "could use some sugar!");
+        }
         // Behavior based on sugarLevel:
         // > 60  → "💫 [name] is bouncing off the walls with energy!"
         // > 40  → "⚡ [name] is feeling quite hyper!"
