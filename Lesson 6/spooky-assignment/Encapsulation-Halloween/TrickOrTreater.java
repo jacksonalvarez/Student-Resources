@@ -1,10 +1,3 @@
-/**
- * TrickOrTreater class demonstrates encapsulation principles
- * by protecting private data with controlled public methods.
- * 
- * Halloween-themed class that models a trick-or-treater
- * collecting and eating candy while tracking sugar levels.
- */
 public class TrickOrTreater {
     // Private fields - encapsulated data that cannot be directly accessed
     private String name;
@@ -34,31 +27,57 @@ public class TrickOrTreater {
      * @param candy The type of candy collected
      */
     public void collectCandy(String candy) {
-        for (int i = 0, i < 100, i++){
-            if (candyBag[i] != ""){
+        for (int i = 0; i < 100; i++){
+            if (candyBag[i] != null){
         
             }    
             else{
-                candy++;
                 candyBag[i] = candy;
                 break;
             }
             }    
         }
+    
+    public void getGandy() {
+        int countOfNoNull = 0;
+         for (int i = 0; i < 100; i++) {
+             if (candyBag[i] != null){ 
+             System.out.println(candyBag[i]);
+             countOfNoNull++;
+             }
+             
+         }
+             System.out.println(countOfNoNull);
+             
+        
+        
+        
+        
+        
     }
+        
     
     /**
      * Public method to eat candy - demonstrates controlled modification
      * Safely decreases candy count and increases sugar level
      */
     public void eatCandy(String candy) {
-        for (int i = 0, i < 100, i++){
-            if (candyBag[i] == candy){
-                candyBag.splice(i, 1);// Removes 1 element starting at index 2
+        int notMeCandy = 0;
+        for (int i = 0; i < 100; i++){
+            if (candyBag[i].equals(candy)){
+                System.out.println("You big and ate: " + candyBag[i]);
+                System.arraycopy(candyBag, i + 1, candyBag, i, candyBag.length - 1 - i); // Removes 1 element starting at index 2
                 sugarLevel += 10;
+                break;
             }
+            if (candyBag[i] != candy){
+                notMeCandy++;
+            }
+            
+            }
+            if (notMeCandy == 100)System.out.println("No candy");
         }
-    }
+    
     
     /**
      * Public method to display current status
