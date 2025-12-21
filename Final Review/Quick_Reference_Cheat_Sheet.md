@@ -3,7 +3,7 @@
 
 ---
 
-## 📊 Primitive Data Types
+## Primitive Data Types
 | Type    | Size  | Range/Values        | Example          |
 |---------|-------|---------------------|------------------|
 | int     | 4 B   | ±2.1 billion        | `int x = 42;`    |
@@ -16,7 +16,7 @@
 
 ---
 
-## ⚙️ Operators & Precedence
+## Operators & Precedence
 
 ### Arithmetic Operators
 ```java
@@ -49,7 +49,7 @@ x--;     // x = x - 1
 
 ---
 
-## 🔀 Boolean Logic
+## Boolean Logic
 
 ### Relational Operators
 ```java
@@ -73,7 +73,7 @@ true  && false → false    false || false → false
 
 ---
 
-## 🔄 Control Flow
+## Control Flow
 
 ### If-Else
 ```java
@@ -86,23 +86,7 @@ if (condition) {
 }
 ```
 
-### Switch (int, byte, short, char, String only)
-```java
-switch (variable) {
-    case value1:
-        // code
-        break;    // Don't forget!
-    case value2:
-        // code
-        break;
-    default:
-        // code
-}
-```
-
----
-
-## 🔁 Loops
+## Loops
 
 ### For Loop
 ```java
@@ -118,23 +102,8 @@ while (condition) {
 }
 ```
 
-### Do-While Loop (condition checked AFTER)
-```java
-do {
-    // code - executes at least once
-} while (condition);  // Don't forget semicolon!
-```
 
-### Enhanced For (For-Each)
-```java
-for (int num : array) {
-    // num is copy of each element
-}
-```
-
----
-
-## 📚 Arrays
+## Arrays
 
 ### Declaration & Initialization
 ```java
@@ -174,7 +143,7 @@ for (int num : arr) {
 
 ---
 
-## 🎯 Object-Oriented Programming
+## Object-Oriented Programming
 
 ### Class Structure
 ```java
@@ -219,31 +188,15 @@ System.out.println(s);  // calls toString()
 
 ---
 
-## 🔐 The Big Four OOP Methods
-
-### 1. Constructor
+### Constructors
 - Same name as class, no return type
 - Initializes instance variables
 - Called with `new` keyword
 
-### 2. Getter (Accessor)
-- Returns private variable value
-- Naming: `getName()`, `getAge()`
-- For arrays: return `arr.clone()` (copy!)
-
-### 3. Setter (Mutator)
-- Modifies private variable
-- Naming: `setName()`, `setAge()`
-- ALWAYS validate input!
-
-### 4. toString()
-- Returns string representation
-- Called automatically by `println()`
-- Format: `"ClassName[field=value, ...]"`
 
 ---
 
-## 🚨 Common Mistakes
+## Common Mistakes
 
 ### ❌ WRONG → ✅ CORRECT
 
@@ -278,7 +231,7 @@ case 1: code; case 2:     → case 1: code; break;
 
 ---
 
-## 🎓 Encapsulation Rules
+## Encapsulation Rules
 
 1. ✅ Make instance variables **private**
 2. ✅ Provide **public getters** for read access
@@ -287,41 +240,18 @@ case 1: code; case 2:     → case 1: code; break;
 
 ---
 
-## 📝 Naming Conventions
+## Naming Conventions
 
 ```java
 public class StudentRecord        // PascalCase for classes
 private String firstName;         // camelCase for variables/methods
 public void calculateGrade()      // camelCase for methods
-private static final int MAX = 100; // CAPS for constants
 boolean isActive;                 // is/has/can for booleans
 ```
 
 ---
 
-## 🧮 Quick Formulas
-
-```java
-// Check even/odd
-num % 2 == 0  // even
-num % 2 != 0  // odd
-
-// Check range (inclusive)
-(num >= min && num <= max)
-
-// Sum of 1 to n
-sum = n * (n + 1) / 2
-
-// Average
-avg = (double) sum / count
-
-// Swap two variables
-int temp = a; a = b; b = temp;
-```
-
----
-
-## ⚡ Test Day Tips
+## Test Day Tips
 
 ### ✓ Before Test
 - [ ] Review primitive types table
@@ -345,7 +275,7 @@ int temp = a; a = b; b = temp;
 
 ---
 
-## 🎯 Quick Self-Test
+## Quick Self-Test
 
 **Can you answer these instantly?**
 
@@ -358,11 +288,10 @@ int temp = a; a = b; b = temp;
 7. Constructor return type?  _(Answer: None!)_
 8. Should variables be public/private?  _(Answer: private)_
 9. `int / int` result type?  _(Answer: int)_
-10. Loops: do-while min iterations?  _(Answer: 1)_
 
 ---
 
-## � Number Systems (Lesson 7)
+## Number Systems
 
 ### The Three Systems
 | System | Base | Digits | Example |
@@ -418,7 +347,7 @@ A=10  B=11  C=12  D=13  E=14  F=15
 
 ---
 
-## 📌 Emergency Reminders
+## Emergency Reminders
 
 **If you forget everything else, remember these:**
 
